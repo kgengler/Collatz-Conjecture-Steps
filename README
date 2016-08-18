@@ -4,7 +4,7 @@ A simple c program to calculate the number of steps
 needed to reach 1 using the Collatz Conjecture. See
 https://en.wikipedia.org/wiki/Collatz_conjecture for more information.
 
-compile: gcc -std=c99 -o "collatz.o" "collatz.c"
+compile: make
 
 You can test multiple numbers at once with a simple loop.
 
@@ -14,7 +14,7 @@ e.g. in bash the following will compute until ctrl-c is pressed
 
 i=1;
 while true; do
-  collatz.o $i;
+  collatz $i;
   let 'i = i + 1';
 done
 
