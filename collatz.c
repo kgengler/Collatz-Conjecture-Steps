@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
 	else
 	{
 		int cc = strtol(argv[1], NULL, 10);
-		int n = 1;
+		int n = 0;
 		printf("%i: ", cc);
 		while (cc != 1)
 		{
